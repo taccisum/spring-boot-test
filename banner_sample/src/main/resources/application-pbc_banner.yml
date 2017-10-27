@@ -1,0 +1,2 @@
+banner:
+  location: classpath:pbc_banner.txt

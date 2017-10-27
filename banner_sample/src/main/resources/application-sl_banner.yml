@@ -1,0 +1,2 @@
+banner:
+  location: classpath:sl_banner.txt

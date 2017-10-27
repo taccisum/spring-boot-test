@@ -6,4 +6,4 @@
   |_|\__,_|\___\___|_|___/\__,_|_| |_| |_|
 
 
-i'm banner
+i'm specified location banner

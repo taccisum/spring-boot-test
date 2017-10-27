@@ -8,8 +8,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @since 27/10/2017
  */
 @SpringBootApplication
-public class BannerApplication {
+public class DefaultBannerApplication {
     public static void main(String[] args) {
-        SpringApplication.run(BannerApplication.class, args);
+        SpringApplication.run(DefaultBannerApplication.class, args);
     }
 }
