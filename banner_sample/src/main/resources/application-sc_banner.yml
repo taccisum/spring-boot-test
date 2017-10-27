@@ -1,6 +1,7 @@
 banner:
   location: classpath:sc_banner.txt
 
+#如果没有输出颜色，需要开启以下配置
 spring:
   output:
     ansi:

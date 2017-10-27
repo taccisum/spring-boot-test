@@ -1,15 +1,11 @@
 package cn.tac.test.spring.boot.banner;
 
-import cn.tac.test.spring.boot.banner.util.StartupUtils;
 import org.springframework.boot.Banner;
-import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.core.env.Environment;
 
 import java.io.PrintStream;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
 
 /**
  * @author tac
@@ -18,9 +14,11 @@ import java.util.List;
 @SpringBootApplication
 public class PrintByCodeBannerApplication {
     public static void main(String[] args) {
-        SpringApplication application = new SpringApplication(PrintByCodeBannerApplication.class);
-        application.setBanner(new MyBanner());
-        application.run(StartupUtils.specifyEnv(args, "pbc_banner"));
+        new SpringApplicationBuilder()
+                .sources(PrintByCodeBannerApplication.class)
+                .profiles("pbc_banner")
+                .banner(new MyBanner())
+                .run(args);
     }
 
     static class MyBanner implements Banner {

@@ -1,8 +1,7 @@
 package cn.tac.test.spring.boot.banner;
 
-import cn.tac.test.spring.boot.banner.util.StartupUtils;
-import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.builder.SpringApplicationBuilder;
 
 /**
  * @author tac
@@ -11,6 +10,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class SpecifiedColorBannerApplication {
     public static void main(String[] args) {
-        SpringApplication.run(SpecifiedColorBannerApplication.class, StartupUtils.specifyEnv(args, "sc_banner"));
+        new SpringApplicationBuilder()
+                .sources(SpecifiedColorBannerApplication.class)
+                .profiles("sc_banner")
+                .run(args);
     }
 }
