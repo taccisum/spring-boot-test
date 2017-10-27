@@ -1,0 +1,2 @@
+banner:
+  location: classpath:sc_banner.txt
