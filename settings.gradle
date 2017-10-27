@@ -2,4 +2,5 @@ rootProject.name = 'spring-boot-test'
 include 'minimum_sample'
 include 'webapp_sample'
 include 'banner_sample'
+include 'listener_sample'
 
