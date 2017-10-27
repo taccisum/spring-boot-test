@@ -1,6 +1,6 @@
-package cn.tac.test.spring.boot.listener;
+package cn.tac.test.spring.boot.bean;
 
-import org.springframework.beans.factory.InitializingBean;
+import cn.tac.test.spring.boot.listener.FailedBean;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.context.event.ApplicationFailedEvent;
@@ -23,12 +23,5 @@ public class FailedApplication {
 
     private static ApplicationListener<ApplicationFailedEvent> failed() {
         return event -> System.out.println("app failed");
-    }
-}
-
-class FailedBean implements InitializingBean {
-    @Override
-    public void afterPropertiesSet() throws Exception {
-        throw new RuntimeException();
     }
 }
