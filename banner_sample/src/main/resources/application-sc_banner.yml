@@ -1,2 +1,7 @@
 banner:
   location: classpath:sc_banner.txt
+
+spring:
+  output:
+    ansi:
+     enabled: ALWAYS
