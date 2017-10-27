@@ -1,11 +1,8 @@
 package cn.tac.test.spring.boot.banner;
 
+import cn.tac.test.spring.boot.banner.util.StartupUtils;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
 
 /**
  * @author tac
@@ -14,10 +11,6 @@ import java.util.List;
 @SpringBootApplication
 public class SpecifiedLocationBannerApplication {
     public static void main(String[] args) {
-        List<String> ls = new ArrayList<>();
-        Collections.addAll(ls, args);
-        ls.add("--spring.profiles.active=sl_banner");
-        String[] arr = new String[ls.size()];
-        SpringApplication.run(SpecifiedLocationBannerApplication.class, ls.toArray(arr));
+        SpringApplication.run(SpecifiedLocationBannerApplication.class, StartupUtils.specifyEnv(args, "sl_banner"));
     }
 }

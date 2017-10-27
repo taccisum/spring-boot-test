@@ -1,5 +1,6 @@
 package cn.tac.test.spring.boot.banner;
 
+import cn.tac.test.spring.boot.banner.util.StartupUtils;
 import org.springframework.boot.Banner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -17,14 +18,9 @@ import java.util.List;
 @SpringBootApplication
 public class PrintByCodeBannerApplication {
     public static void main(String[] args) {
-        List<String> ls = new ArrayList<>();
-        Collections.addAll(ls, args);
-        ls.add("--spring.profiles.active=pbc_banner");
-        String[] arr = new String[ls.size()];
-
         SpringApplication application = new SpringApplication(PrintByCodeBannerApplication.class);
         application.setBanner(new MyBanner());
-        application.run(ls.toArray(arr));
+        application.run(StartupUtils.specifyEnv(args, "pbc_banner"));
     }
 
     static class MyBanner implements Banner {
