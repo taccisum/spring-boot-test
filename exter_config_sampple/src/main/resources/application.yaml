@@ -9,3 +9,15 @@ arr:
       - hhh
       - abc
       - 123
+
+binder:
+  yaml:
+    foo1: bar1
+    foo2: bar2
+    foo3: true
+    foo4: 12345
+    foo5: 23.45
+    foo6:
+      - abc
+      - 123
+      - 456
