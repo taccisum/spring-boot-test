@@ -3,3 +3,9 @@ simple:
     foo1: bar1
     foo2: bar2
 
+arr:
+  yaml:
+    foo:
+      - hhh
+      - abc
+      - 123
