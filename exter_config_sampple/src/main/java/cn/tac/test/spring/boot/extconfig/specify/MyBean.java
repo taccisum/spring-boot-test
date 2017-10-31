@@ -1,0 +1,19 @@
+package cn.tac.test.spring.boot.extconfig.specify;
+
+import org.springframework.beans.factory.InitializingBean;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
+
+/**
+ * @author tac
+ * @since 27/10/2017
+ */
+@Component
+public class MyBean implements InitializingBean {
+    @Value("${greeting}")
+    private String greeting;
+    @Override
+    public void afterPropertiesSet() throws Exception {
+        System.out.println(greeting);
+    }
+}

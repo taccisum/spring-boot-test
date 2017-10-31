@@ -1,5 +1,7 @@
 package cn.tac.test.spring.boot.extconfig;
 
+import cn.tac.test.spring.boot.extconfig.common.ExtConfigApplication;
+import cn.tac.test.spring.boot.extconfig.common.RandomBean;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
