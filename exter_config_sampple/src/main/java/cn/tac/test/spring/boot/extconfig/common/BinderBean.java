@@ -18,6 +18,7 @@ public class BinderBean {
     private Integer foo4;
     private Float foo5;
     private List<String> foo6;
+    private String lastFoo;
 
     public String getFoo1() {
         return foo1;
@@ -67,6 +68,14 @@ public class BinderBean {
         this.foo6 = foo6;
     }
 
+    public String getLastFoo() {
+        return lastFoo;
+    }
+
+    public void setLastFoo(String lastFoo) {
+        this.lastFoo = lastFoo;
+    }
+
     @Override
     public String toString() {
         return "BinderBean{" +
@@ -76,6 +85,7 @@ public class BinderBean {
                 ", foo4=" + foo4 +
                 ", foo5=" + foo5 +
                 ", foo6=" + foo6 +
+                ", lastFoo='" + lastFoo + '\'' +
                 '}';
     }
 }

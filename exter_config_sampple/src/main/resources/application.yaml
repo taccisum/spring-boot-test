@@ -21,3 +21,4 @@ binder:
       - abc
       - 123
       - 456
+    last-foo: lalala
