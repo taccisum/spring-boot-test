@@ -14,6 +14,7 @@ public class BeanConfiguration {
     @ConfigurationProperties(prefix = "binder.yaml.third")
     public ThirdPartBinderBean thirdPartBinderBean(){
         ThirdPartBinderBean bean = new ThirdPartBinderBean();
+        bean.setFoo1("foo1 will be override");
         bean.setFoo2("bar2");
         return bean;
     }
