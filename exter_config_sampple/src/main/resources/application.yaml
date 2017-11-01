@@ -26,3 +26,7 @@ binder:
     third:
       foo1: bar1
 
+    validation:
+      foo1:
+      foo2: bar2
+

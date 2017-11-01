@@ -3,6 +3,7 @@ package cn.tac.test.spring.boot.extconfig;
 import cn.tac.test.spring.boot.extconfig.common.BinderBean;
 import cn.tac.test.spring.boot.extconfig.common.ExtConfigApplication;
 import cn.tac.test.spring.boot.extconfig.common.ThirdPartBinderBean;
+import cn.tac.test.spring.boot.extconfig.common.ValidatedBinderBean;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,6 +25,9 @@ public class YamlDataBinderTest {
     @Autowired
     private ThirdPartBinderBean thirdPartBinderBean;
 
+    @Autowired
+    private ValidatedBinderBean validatedBinderBean;
+
     @Test
     public void testSimply() {
         System.out.println(binderBean);
@@ -32,5 +36,10 @@ public class YamlDataBinderTest {
     @Test
     public void testThirdPart() {
         System.out.println(thirdPartBinderBean);
+    }
+
+    @Test
+    public void testValidated() {
+        System.out.println(validatedBinderBean);
     }
 }
