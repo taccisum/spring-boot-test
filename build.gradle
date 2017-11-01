@@ -4,10 +4,12 @@ buildscript {
         maven {
             url 'http://maven.aliyun.com/nexus/content/groups/public/'
         }
+        maven { url 'http://repo.spring.io/plugins-release' }
         mavenCentral()
     }
     dependencies {
         classpath("org.springframework.boot:spring-boot-gradle-plugin:1.5.7.RELEASE")
+        classpath 'io.spring.gradle:propdeps-plugin:0.0.9.RELEASE'
     }
 }
 
@@ -24,6 +26,7 @@ allprojects {
 subprojects {
     apply plugin: 'java'
     apply plugin: "org.springframework.boot"
+    apply plugin: 'propdeps-idea'
 
     sourceCompatibility = 1.8
 
