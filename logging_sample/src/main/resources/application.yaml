@@ -28,8 +28,12 @@ logging:
 ---
 spring:
   profiles: custom
-  output:
-    ansi:
-      enabled: always
 logging:
   config: classpath:custom-logback-spring.xml
+---
+spring:
+  profiles: extensions
+logging:
+  config: classpath:extension-logback-spring.xml
+author:
+  name: ^_^
