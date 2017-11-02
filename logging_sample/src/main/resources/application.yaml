@@ -1,5 +1,5 @@
 spring:
-  profiles: def
+  profiles: app
 
 debug: true
 
