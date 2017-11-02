@@ -15,6 +15,7 @@ public class DefaultLoggingApplication {
     public static void main(String[] args) {
         new SpringApplicationBuilder()
                 .sources(DefaultLoggingApplication.class)
-                .run("--debug");
+                .profiles("def")
+                .run(args);
     }
 }
