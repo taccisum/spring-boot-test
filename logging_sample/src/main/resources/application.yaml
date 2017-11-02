@@ -1,7 +1,14 @@
 spring:
-  profiles:
-    active: def
+  profiles: def
 
 debug: true
+
+---
+
+spring:
+  profiles: color
+  output:
+    ansi:
+      enabled: always
 
 ---
