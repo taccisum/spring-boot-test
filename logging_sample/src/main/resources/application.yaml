@@ -20,3 +20,13 @@ logging:
   level:
     java.lang.String: info
     java.lang.Integer: warn
+---
+spring:
+  profiles: custom
+  output:
+    ansi:
+      enabled: always
+logging:
+  config: classpath:custom-logback-spring.xml
+  file: custom_logging_sample
+
