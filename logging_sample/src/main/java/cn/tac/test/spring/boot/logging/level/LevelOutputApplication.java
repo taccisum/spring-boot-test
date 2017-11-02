@@ -1,0 +1,21 @@
+package cn.tac.test.spring.boot.logging.level;
+
+import cn.tac.test.spring.boot.logging.runnner.LevelLoggingRunner;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.builder.SpringApplicationBuilder;
+import org.springframework.context.annotation.Import;
+
+/**
+ * @author tac
+ * @since 02/11/2017
+ */
+@SpringBootApplication
+@Import(LevelLoggingRunner.class)
+public class LevelOutputApplication {
+    public static void main(String[] args) {
+        new SpringApplicationBuilder()
+                .profiles("level")
+                .sources(LevelOutputApplication.class)
+                .run(args);
+    }
+}

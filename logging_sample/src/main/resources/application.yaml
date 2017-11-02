@@ -13,3 +13,10 @@ spring:
   profiles: file
 logging:
   file: logging_sample.log
+---
+spring:
+  profiles: level
+logging:
+  level:
+    java.lang.String: info
+    java.lang.Integer: warn
