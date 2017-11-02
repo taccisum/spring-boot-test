@@ -2,13 +2,14 @@ spring:
   profiles: def
 
 debug: true
-
 ---
-
 spring:
   profiles: color
   output:
     ansi:
       enabled: always
-
 ---
+spring:
+  profiles: file
+logging:
+  file: logging_sample.log

@@ -17,6 +17,8 @@ public class LoggingRunner implements ApplicationRunner {
     public void run(ApplicationArguments applicationArguments) throws Exception {
         logger.info(SPLITTER);
         logger.info("this is an info message");
+        logger.warn("this is an warn message");
+        logger.error("this is an error message");
         logger.info(SPLITTER);
     }
 }
