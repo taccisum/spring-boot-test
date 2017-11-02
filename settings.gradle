@@ -5,4 +5,5 @@ include 'banner_sample'
 include 'listener_sample'
 include 'access_args_sample'
 include 'exter_config_sampple'
+include 'logging_sample'
 
