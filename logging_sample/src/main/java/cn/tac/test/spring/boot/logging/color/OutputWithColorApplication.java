@@ -1,4 +1,4 @@
-package cn.tac.test.spring.boot.logging.app;
+package cn.tac.test.spring.boot.logging.color;
 
 import cn.tac.test.spring.boot.logging.runnner.LoggingRunner;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -11,11 +11,11 @@ import org.springframework.context.annotation.Import;
  */
 @SpringBootApplication
 @Import(LoggingRunner.class)
-public class DefaultLoggingApplication {
+public class OutputWithColorApplication {
     public static void main(String[] args) {
         new SpringApplicationBuilder()
-                .sources(DefaultLoggingApplication.class)
-                .profiles("def")
+                .profiles("color")
+                .sources(OutputWithColorApplication.class)
                 .run(args);
     }
 }
