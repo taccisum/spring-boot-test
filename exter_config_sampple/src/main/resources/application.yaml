@@ -30,3 +30,9 @@ binder:
       foo1:
       foo2: bar2
 
+
+---
+spring:
+  profiles: expansion
+app:
+  name: ${name}
