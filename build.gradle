@@ -37,6 +37,7 @@ subprojects {
         compile(
                 ['org.springframework.boot:spring-boot-starter'],
                 ["org.springframework.boot:spring-boot-devtools"],
+                [group: 'io.codearte.jfairy', name: 'jfairy', version: '0.5.8']
         )
         testCompile(
                 ['org.springframework.boot:spring-boot-starter-test'],
