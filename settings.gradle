@@ -9,4 +9,5 @@ include 'logging_sample'
 include 'validation_sample'
 include 'redis_sample'
 include 'rabbitmq_sample'
+include 'email_sample'
 
