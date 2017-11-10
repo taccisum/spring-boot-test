@@ -13,7 +13,6 @@ import org.springframework.test.context.junit4.SpringRunner;
  * @since 10/11/2017
  */
 @SpringBootTest(classes = CommonTestingApplication.class)
-
 @RunWith(SpringRunner.class)
 public class SimpleTest {
     @Autowired
