@@ -1,9 +1,9 @@
-package cn.tac.test.spring.boot.testing.web;
+package cn.tac.test.spring.boot.testing.web.realenv;
 
-import cn.tac.test.spring.boot.testing.web.common.CommonWebTestingApplication;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.context.ApplicationContext;
 import org.springframework.test.context.junit4.SpringRunner;
@@ -12,7 +12,8 @@ import org.springframework.test.context.junit4.SpringRunner;
  * @author tac
  * @since 10/11/2017
  */
-@SpringBootTest(classes = CommonWebTestingApplication.class, webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
+@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
+@SpringBootApplication
 @RunWith(SpringRunner.class)
 public class RealServletEnvTest {
     @Autowired

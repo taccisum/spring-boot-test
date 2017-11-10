@@ -12,7 +12,7 @@ import org.springframework.test.context.junit4.SpringRunner;
  * @author tac
  * @since 10/11/2017
  */
-@SpringBootTest
+@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.NONE)
 @SpringBootApplication
 @RunWith(SpringRunner.class)
 public class SimpleTest {

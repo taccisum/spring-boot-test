@@ -11,5 +11,4 @@ include 'redis_sample'
 include 'rabbitmq_sample'
 include 'email_sample'
 include 'testing_sample'
-include 'testing_web_sample'
 
