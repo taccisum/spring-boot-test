@@ -1,4 +1,4 @@
-package cn.tac.test.spring.boot.testing.mybatis.simple.dao;
+package cn.tac.test.spring.boot.testing.mybatis.simple.mapper;
 
 import cn.tac.test.spring.boot.testing.mybatis.simple.pojo.Foo;
 import org.apache.ibatis.annotations.Mapper;

@@ -1,6 +1,6 @@
 package cn.tac.test.spring.boot.testing.mybatis.simple;
 
-import cn.tac.test.spring.boot.testing.mybatis.simple.dao.FooMapper;
+import cn.tac.test.spring.boot.testing.mybatis.simple.mapper.FooMapper;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mybatis.spring.boot.test.autoconfigure.MybatisTest;
