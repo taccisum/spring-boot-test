@@ -1,7 +1,8 @@
-package cn.tac.test.spring.boot.testing.mock;
+package cn.tac.test.spring.boot.testing.mock.simple;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.stereotype.Service;
@@ -15,6 +16,7 @@ import static org.mockito.Mockito.when;
  * @since 10/11/2017
  */
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.NONE)
+@SpringBootApplication
 @RunWith(SpringRunner.class)
 public class MockTest {
     @MockBean
