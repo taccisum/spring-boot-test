@@ -1,4 +1,4 @@
-package cn.tac.test.spring.boot.testing.common;
+package cn.tac.test.spring.boot.testing.mock;
 
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -7,5 +7,5 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @since 10/11/2017
  */
 @SpringBootApplication
-public class CommonTestingApplication {
+public class MockTestApplication {
 }
