@@ -2,3 +2,12 @@ spring:
   output:
     ansi:
       enabled: always
+---
+spring:
+  profiles: mybatis-simple
+  datasource:
+    username: sa
+    password: sa
+    schema: classpath:schema-hsql-mybatis-simple.sql
+    data: classpath:data-hsql-mybatis-simple.sql
+    url: jdbc:hsqldb:mem:hsql_db
