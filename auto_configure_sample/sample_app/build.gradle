@@ -1,0 +1,3 @@
+dependencies {
+    compile project (":auto_configure_sample:tac_auto_configure")
+}
