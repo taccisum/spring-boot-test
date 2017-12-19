@@ -18,4 +18,5 @@ findProject(':auto_configure_sample:tac_auto_configure')?.name = 'tac_auto_confi
 include 'auto_configure_sample:sample_app'
 findProject(':auto_configure_sample:sample_app')?.name = 'sample_app'
 include 'thymeleaf-sample'
+include 'transaction_sample'
 
